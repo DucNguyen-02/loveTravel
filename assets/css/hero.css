@@ -1,0 +1,144 @@
+.hero {
+    padding: 80px 0;
+}
+
+.hero-header {
+    display: flex;
+    margin-bottom: 110px;
+}
+
+.hero-ads {
+    max-width: 330px;
+    margin-right: auto;
+}
+
+.hero-ads-subtitle {
+    font-size: 14px;
+    color: #ccc;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.hero-ads-title {
+    font-size: 35px;
+    color: #555555;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.hero-ads-desc {
+    font-size: 14px;
+    line-height: 27px;
+    letter-spacing: 2px;
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+.hero-image {
+    width: 750px;
+    height: 410px;
+}
+
+.hero-ads-price {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.slot {
+    font-size: 20px;
+}
+
+.old-price {
+    color: #ccc;
+    text-decoration: line-through;
+}
+
+.hero-item {
+    display: flex;
+}
+
+.hero-item-img {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.hero-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.hero-item-header {
+    margin-bottom: 15px;
+}
+
+.hero-item-desc {
+    font-size: 18px;
+    color: #666;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.hero-item-link {
+    text-decoration: none;
+    color: rgb(14, 195, 240);
+}
+
+.hero-img {
+    position: relative;
+}
+
+.hero-times {
+    position: absolute;
+    background-color: rgb(14, 195, 240);
+    transform: translate(-50%, -50%);
+    left: 50%;
+    display: flex;
+}
+
+.hero-time {
+    display: block;
+    width: 122px;
+    height: 116px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero-time-number {
+    font-size: 35px;
+    display: block;
+}
+
+.hero-time-text {
+    font-size: 13px;
+}
+
+@media only screen and (max-width: 739px) {
+    .hero-header {
+        flex-direction: column;
+    }
+
+    .hero-ads-desc {
+        font-size: 16px;
+        line-height: 27px;
+        letter-spacing: 2px;
+        margin-bottom: 30px;
+        color: black;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+
+    .hero-list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .hero-time {
+        width: 110px;
+    }
+}

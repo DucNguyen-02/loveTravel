@@ -1,0 +1,81 @@
+.list-location {
+    text-align: center;
+    padding: 60px 0;
+}
+
+.list-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.list-item {
+    text-align: left;
+    border: 1px solid rgb(221, 206, 206);
+}
+
+.list-item-img {
+    width: 370px;
+    display: block;
+}
+
+.list-item-wrapper {
+    padding: 34px;
+}
+
+.list-item-country {
+    color: #333;
+}
+
+.list-item-continents {
+    font-size: 16px;
+    color: #777;
+}
+
+.list-item-price-wrapper {
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 14px 0;
+}
+
+.list-item-price-desc {
+    margin-bottom: 30px;
+}
+
+.list-item-price-wrapper::before {
+    content: '';
+    position: absolute;
+    border-bottom: 1px solid #ccc;
+    top: 0px;
+    left: 0;
+    width: 100%;
+}
+
+.list-item-price-wrapper::after {
+    content: '';
+    position: absolute;
+    border-bottom: 1px solid #ccc;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.list-item-price-desc {
+    color: #777;
+    font-size: 16px;
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
+
+@media only screen and (max-width: 739px) {
+    .list-row {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .list-item-img {
+        width: 100%;
+    }
+}

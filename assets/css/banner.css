@@ -1,0 +1,48 @@
+.banner {
+    min-height: 235px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: -1;
+}
+
+.banner-text {
+    font-size: 30px;
+    color: #fff;
+}
+
+.btn.btn-white {
+    background-color: #fff;
+}
+
+.banner-btn h2 {
+    color: #f76570;
+    font-size: 16px;
+}
+
+.underline {
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+}
+
+.underline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 6px;
+    width: 100%;
+    background-color: greenyellow;
+    height: 6px;
+    z-index: -1;
+}
+
+@media only screen and (max-width: 739px) {
+    .banner {
+        flex-direction: column;
+    }
+}

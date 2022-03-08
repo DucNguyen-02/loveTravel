@@ -1,0 +1,59 @@
+.banner-left {
+    background-image: url('http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/parallax-5-filter.jpg?id=1584');
+    width: 50%;
+    height: 270px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-right {
+    background-image: url('http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/parallax-6-filter.jpg?id=1585');
+    width: 50%;
+    height: 270px;
+    background-position: center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner2 {
+    display: flex;
+    text-align: center;
+}
+
+.list {
+    font-size: 14px;
+}
+
+.banner-content {
+    color: #fff;
+}
+
+.banner-content-heading {
+    font-size: 40px;
+    font-weight: 600;
+    padding: 15px 0;
+}
+
+.test {
+    height: 500px;
+}
+
+@media only screen and (max-width: 739px) {
+    .banner2 {
+        flex-direction: column;
+    }
+
+    .banner-left {
+        width: 100%;
+    }
+    .banner-right {
+        width: 100%;
+    }
+}

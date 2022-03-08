@@ -1,0 +1,93 @@
+.portfolio {
+    padding: 60px 0px;
+    text-align: center;
+}
+
+.portfolio-desc {
+    font-size: 14px;
+    color: rgb(70, 65, 65);
+}
+
+.portfolio-title {
+    font-size: 36px;
+    display: inline-block;
+    color: rgb(63, 59, 59);
+}
+
+.underline {
+    display: inline-block;
+    position: relative;
+}
+
+.underline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 6px;
+    width: 100%;
+    background-color: greenyellow;
+    height: 6px;
+    z-index: -1;
+}
+
+.portfolio-header {
+    margin-bottom: 50px;
+}
+
+.portfolio-content {
+    text-align: center;
+}
+
+.portfolio-content-img {
+    width: 100%;
+    filter: brightness(80%);
+}
+
+.portfolio-content-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.portfolio-content-item {
+    position: relative;
+}
+
+.portfolio-content-item-location {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    text-align: left;
+    color: #fff;
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(16, 170, 231);
+    opacity: 0;
+    transition: opacity linear 0.5s;
+    color: #fff;
+}
+
+.overlay-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.portfolio-content-item:hover .overlay {
+    opacity: 1;
+}
+
+@media only screen and (max-width: 739px) {
+    .portfolio-content-row {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
